@@ -3,37 +3,18 @@ A web crawler based on page rank algorithms.
 
 
 In command line: 
-pip install robotparser
-pip install urllib2
-pip install numpy
 
-python spider_main.py
+	pip install robotparser
+	pip install urllib2
+	pip install numpy
+
+	python spider_main.py
 
 Then: 
-Input the keyword and number of pages you would like to fetch
+
+	Input the keyword and number of pages you would like to fetch
 
 Note that keyword can only contain characters and space
-
---ebbets+field_page_rank.html
---ebbets+field_BFS.html
---knuckle+sandwich_page_rank.html
---knuckle+sandwich_BFS.html
---spider_main.py							#Input keyword and a number
-      |
-       --crawl_orchestrator.py				#Skeleton of this crawler
-			|
-			 --url_manager.py				#Manage url's dict and set
-			|
-			 --html_downloader.py			#Download pages
-			| 
-			 --html_googler_fetcher.py		#Parse start page from google
-			|
-			 --html_outputer.py			#Output pages and report
-			|
-			 --html_parser.py				#Parse normal web pages
-			|
-			 --page_rank_util.py			#Perform page rank
-       
 
 Descriptions:
 
